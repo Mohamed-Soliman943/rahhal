@@ -1,4 +1,3 @@
-import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -10,7 +9,7 @@ class DetailsAppDar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
-      systemOverlayStyle: SystemUiOverlayStyle(
+      systemOverlayStyle: const SystemUiOverlayStyle(
           statusBarBrightness: Brightness.dark
       ),
       expandedHeight: 300,
@@ -20,15 +19,39 @@ class DetailsAppDar extends StatelessWidget {
       collapsedHeight: 100,
       flexibleSpace: ClipRRect(
         borderRadius: BorderRadius.circular(32.0),
-        child: Container(
-          padding: EdgeInsets.all(10),
-          height: 340,
-          width: double.infinity,
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: NetworkImage(
-                      'https://www.planetware.com/photos-large/EGY/egypt-cairo-pyramids-of-giza-and%20camels-2.jpg'),
-                  fit: BoxFit.cover)),
+        child: Stack(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(10),
+              height: 340,
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                  image: DecorationImage(
+                      image: NetworkImage(
+                          'https://www.planetware.com/photos-large/EGY/egypt-cairo-pyramids-of-giza-and%20camels-2.jpg'),
+                      fit: BoxFit.cover)),
+            ),
+            Positioned(
+              right: 20,
+              top: 50,
+              child:GestureDetector(
+                onTap: (){},
+                child: Container(
+                  alignment: AlignmentDirectional.center,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(255, 170, 4, 1),
+                    borderRadius: BorderRadius.circular(10.0)
+                  ),
+                  width: 125,
+                  height: 40,
+                  child: Text('Use Rahhal',
+                  style: TextStyle(
+                    fontSize: 20,
+                  ),),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
 

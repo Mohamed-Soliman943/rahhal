@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
 
       title: 'Rahhal',
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }

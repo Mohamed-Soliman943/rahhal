@@ -1,7 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:rahhal/screens/scanningScreen.dart';
 import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
 
@@ -48,7 +45,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset('assets/images/horas.png',width: 30,height: 30,),
-                Text('R A H H A L',
+                const Text('R A H H A L',
                   style: TextStyle(
                     fontSize: 30,
                     fontFamily:'raleway',
@@ -61,9 +58,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
             // height: 80,
           ),
         ),
-        actions: [
+        actions: const [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+            padding: EdgeInsets.symmetric(horizontal: 8.0),
             child: CircleAvatar(
               radius: 20.0,
               child: Icon(Icons.person,
@@ -79,7 +76,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
           physics: const NeverScrollableScrollPhysics(),
           controller: pageController,
 
-          children:[
+          children:const [
             HomeScreen(),
             ScanScreen(),
             ExploreScreen(),
@@ -90,10 +87,10 @@ class _NavigationScreenState extends State<NavigationScreen> {
         ),
       ),
 
-      backgroundColor: Color.fromRGBO(40, 40, 40, 100),
+      backgroundColor: const Color.fromRGBO(40, 40, 40, 100),
 
       bottomNavigationBar: WaterDropNavBar(
-        waterDropColor: Color.fromRGBO(255, 169, 3, 100),
+        waterDropColor: const Color.fromRGBO(255, 170, 4, 100),
         inactiveIconColor: Colors.white,
         iconSize: 30,
         bottomPadding: 5.0,

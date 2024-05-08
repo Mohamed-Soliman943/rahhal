@@ -1,9 +1,6 @@
 
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:rahhal/screens/detailsScreen.dart';
-
 import '../classes/card_class.dart';
 import 'Card.dart';
 
@@ -52,7 +49,7 @@ class CardList extends StatelessWidget {
           onTap: (){
             Navigator.push(context,
             MaterialPageRoute(builder: (context){
-              return DetailsScreen();
+              return const DetailsScreen();
             }));
           },
         );

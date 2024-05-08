@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'CardList.dart';
@@ -12,15 +11,15 @@ class HomeLayerOne extends StatelessWidget {
 
       children: [
         const Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          padding: EdgeInsets.symmetric(horizontal: 10.0),
           child: Text('Explore Rahhal',
             style: TextStyle(
-                color: Colors.orangeAccent,
+                color: Color.fromRGBO(255, 170, 4, 100),
                 fontSize: 30
             ),),
         ),
         const Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10.0),
+          padding: EdgeInsets.symmetric(horizontal: 10.0),
           child: Text('Suggestions',
             style: TextStyle(
                 color: Colors.white,
