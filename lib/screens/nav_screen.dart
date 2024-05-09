@@ -90,7 +90,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
       backgroundColor: const Color.fromRGBO(40, 40, 40, 100),
 
       bottomNavigationBar: WaterDropNavBar(
-        waterDropColor: const Color.fromRGBO(255, 170, 4, 100),
+        waterDropColor: const Color.fromRGBO(255, 170, 4, 10),
         inactiveIconColor: Colors.white,
         iconSize: 30,
         bottomPadding: 5.0,

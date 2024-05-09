@@ -12,7 +12,7 @@ class HomeScreen extends StatelessWidget {
       body: Stack(
         children: [
           HomeLayerOne(),
-          // CardList()
+
         ],
       ),
 

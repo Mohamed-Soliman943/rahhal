@@ -1,5 +1,4 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -39,12 +38,12 @@ class DetailsAppDar extends StatelessWidget {
                 child: Container(
                   alignment: AlignmentDirectional.center,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(255, 170, 4, 1),
+                    color: const Color.fromRGBO(255, 170, 4, 1),
                     borderRadius: BorderRadius.circular(10.0)
                   ),
                   width: 125,
                   height: 40,
-                  child: Text('Use Rahhal',
+                  child: const Text('Use Rahhal',
                   style: TextStyle(
                     fontSize: 20,
                   ),),

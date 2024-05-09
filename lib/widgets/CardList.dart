@@ -14,6 +14,7 @@ class CardList extends StatelessWidget {
         image: 'https://www.planetware.com/photos-large/EGY/egypt-cairo-pyramids-of-giza-and%20camels-2.jpg',
 
     ),
+
     cardClass(
         name: 'Cairo Tower',
         coordinates: '30.046132956124648, 31.224309524745323',

@@ -14,7 +14,7 @@ class HomeLayerOne extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 10.0),
           child: Text('Explore Rahhal',
             style: TextStyle(
-                color: Color.fromRGBO(255, 170, 4, 100),
+                color: Color.fromRGBO(255, 170, 4, 10),
                 fontSize: 30
             ),),
         ),
