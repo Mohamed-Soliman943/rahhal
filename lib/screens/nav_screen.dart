@@ -1,7 +1,8 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:rahhal/screens/scanningScreen.dart';
 import 'package:water_drop_nav_bar/water_drop_nav_bar.dart';
-
+import '../firebase_options.dart';
 import 'exploreScreen.dart';
 import 'favouriteScreen.dart';
 import 'home.dart';
@@ -23,6 +24,9 @@ class _NavigationScreenState extends State<NavigationScreen> {
   }
   @override
   Widget build(BuildContext context) {
+    Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+    );
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,

@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "979692880562",
+    "firebase_url": "https://final-demo-proj-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "final-demo-proj",
+    "storage_bucket": "final-demo-proj.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979692880562:android:c4fcdf946b79ea1202bfab",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV6dfOpj2r-pvyWcFcgM9bG6k7f2g9e58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979692880562:android:c340f477c38fb4d802bfab",
+        "android_client_info": {
+          "package_name": "com.example.rahhal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV6dfOpj2r-pvyWcFcgM9bG6k7f2g9e58"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
