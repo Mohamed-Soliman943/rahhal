@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:rahhal/widgets/presenter.dart';
+class HomeLayerThree extends StatelessWidget {
+  final VoidCallback onClose;
 
-class HomeLayerThree extends StatefulWidget {
-  const HomeLayerThree({super.key});
+  const HomeLayerThree({Key? key, required this.onClose}) : super(key: key);
 
-  @override
-  State<HomeLayerThree> createState() => _HomeLayerThreeState();
-}
-
-class _HomeLayerThreeState extends State<HomeLayerThree> {
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -20,16 +17,9 @@ class _HomeLayerThreeState extends State<HomeLayerThree> {
         height: double.infinity,
         child: Column(
           children: [
-            Expanded(
-              child: Container(
-                child: Text('nlkvmklrnfvmklf',
-                  style: TextStyle(
-                    color: Colors.white,
-                  ),),
-              ),
-            ),
+            Expanded(child: Presenter()),
             GestureDetector(
-              onTap: (){},
+              onTap: onClose, // Call the onClose callback function
               child: Container(
                 alignment: AlignmentDirectional.center,
                 decoration: BoxDecoration(
@@ -38,14 +28,12 @@ class _HomeLayerThreeState extends State<HomeLayerThree> {
                 ),
                 width: 150,
                 height: 40,
-                child: const Text('Close',
-                  style: TextStyle(
-                      fontSize: 20,
-                      color: Colors.white
-                  ),),
+                child: const Text(
+                  'Close',
+                  style: TextStyle(fontSize: 20, color: Colors.white),
+                ),
               ),
             ),
-
           ],
         ),
       ),

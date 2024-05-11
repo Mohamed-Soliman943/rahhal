@@ -38,6 +38,9 @@ dependencies:
   floaty_navy_bar: ^1.0.5
   simple_floating_bottom_nav_bar: ^0.0.3
   flutter_svg: ^2.0.10+1
+  video_player: ^2.8.6
+  flick_video_player: ^0.8.0
+  chewie: ^1.8.1
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -72,6 +75,7 @@ flutter:
      - assets/
      - assets/images/
      - assets/animations/
+     - assets/videos/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
