@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:rahhal/classes/Details_class.dart';
 import 'package:rahhal/widgets/DetailsAppBar.dart';
 class DetailsScreen extends StatelessWidget {
-  const DetailsScreen({super.key});
-
+  const DetailsScreen({super.key, required this.element});
+  final detailsClass element;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +12,8 @@ class DetailsScreen extends StatelessWidget {
 
         slivers: [
 
-          const DetailsAppDar(),
+          DetailsAppDar(
+              link:element.image),
           SliverToBoxAdapter(
             child: Padding(
               padding: const EdgeInsets.only(
@@ -119,8 +121,8 @@ class DetailsScreen extends StatelessWidget {
                   const SizedBox(
                     height: 20.0,
                   ),
-                  const Text(
-                    'Pyramids',
+                   Text(
+                    element.name,
                     style: TextStyle(
                       fontSize: 35,
                       color: Color.fromRGBO(255, 170, 4, 10),
@@ -132,7 +134,7 @@ class DetailsScreen extends StatelessWidget {
                     fontSize: 28,
                     fontWeight: FontWeight.bold,
                   ),),
-                  const Text('For a GUI application to do anything, it has to have actions: users want to tell the application to do something. Actions are often simple functions that directly perform the action (such as set a value or save a file). In a larger application, however, things are more complex: the code for invoking the action, and the code for the action itself might need to be in different places. Shortcuts (key bindings) might need definition at a level that knows nothing about the actions they invoke.',
+                   Text(element.describtion,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 20,

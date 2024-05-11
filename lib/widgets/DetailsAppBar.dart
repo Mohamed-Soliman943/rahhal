@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class DetailsAppDar extends StatelessWidget {
-  const DetailsAppDar({super.key});
-
+  const DetailsAppDar({super.key, required this.link});
+  final String link;
   @override
   Widget build(BuildContext context) {
     return SliverAppBar(
@@ -24,10 +24,10 @@ class DetailsAppDar extends StatelessWidget {
               padding: const EdgeInsets.all(10),
               height: 340,
               width: double.infinity,
-              decoration: const BoxDecoration(
+              decoration:  BoxDecoration(
                   image: DecorationImage(
                       image: NetworkImage(
-                          'https://www.planetware.com/photos-large/EGY/egypt-cairo-pyramids-of-giza-and%20camels-2.jpg'),
+                          link),
                       fit: BoxFit.cover)),
             ),
             Positioned(
