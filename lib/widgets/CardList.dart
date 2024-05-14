@@ -65,9 +65,6 @@ class CardList extends StatelessWidget {
           },
         );
       },
-
-
-
     );
 
 

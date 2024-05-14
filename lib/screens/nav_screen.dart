@@ -6,6 +6,8 @@ import '../firebase_options.dart';
 import 'exploreScreen.dart';
 import 'favouriteScreen.dart';
 import 'home.dart';
+import 'package:geolocator/geolocator.dart';
+
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
 
@@ -66,10 +68,8 @@ class _NavigationScreenState extends State<NavigationScreen> {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 8.0),
             child: CircleAvatar(
-              radius: 20.0,
-              child: Icon(Icons.person,
-                size: 40,
-                color: Colors.white,),
+              backgroundImage: NetworkImage('https://d2pas86kykpvmq.cloudfront.net/images/humans-3.0/ava-4.png'),
+              radius: 20,
             ),
           ),
         ],
