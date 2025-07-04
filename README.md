@@ -1,55 +1,56 @@
-# Rahhal
+# 🧭 RAHHAL – Your Smart Travel Companion
 
-**Rahhal** is a mobile application that acts as a virtual tour guide for tourists. It offers immersive and interactive features to enhance the travel experience by combining modern technology with cultural exploration.
-
----
-
-## Table of Contents
-1. [About the Project](#about-the-project)
-2. [Features](#features)
-3. [Screenshots](#screenshots)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Technologies Used](#technologies-used)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact](#contact)
+**RAHHAL** is a Flutter-based tourism app that transforms the way tourists explore ancient sites and museums. It combines **AR scanning**, **3D monument models**, and **AI-guided tours** into a single mobile experience. Whether you're discovering monuments or planning your journey, RAHHAL guides you from **home to home**.
 
 ---
 
-## About the Project
+## ✨ Features
 
-**Rahhal** was created to revolutionize the way tourists explore historical monuments and manage their journeys. With its user-friendly interface and cutting-edge features, the app serves as a comprehensive travel companion that provides guidance, booking options, and interactive learning.
+### 🏛️ Interactive Monument Guide
+- Scan a monument using your camera.
+- View a **human avatar** explaining the history behind the monument.
+- Explore rich **3D models** to learn visually.
+
+### 📍 Nearby Discovery
+- Discover **museums and ancient landmarks** around your current location.
+- View detailed information and directions.
+
+### 🧳 Smart Tour Planner
+- Plan your journey based on **your budget**.
+- Book tours and manage reservations.
+- Organize everything from **departure to return**.
+
+### 🛍️ Coming Soon
+- Souvenir marketplace with local cultural items.
+- In-app booking engine and offline travel guide mode.
 
 ---
 
-## Features
+## 📱 Tech Stack
 
-- **3D Monument Scanning**: Scan a monument to view a human figure explaining its history alongside a detailed 3D model.
-- **Location Finder**: Find the nearest museums and ancient sites with navigation support.
-- **Journey Management**: Plan and book tours based on budget and preferences, including transportation, accommodation, and activities.
-- **Interactive Guide**: An integrated virtual guide to enrich the user's travel experience.
-- **Souvenir Market**: Browse and purchase authentic souvenirs from local vendors.
-
----
-
-## Screenshots
-
-*(Add screenshots or GIFs of the app here)*  
-![Rahhal Screenshot](path-to-screenshot.png)
+| Layer       | Tech Used                   |
+|-------------|-----------------------------|
+| Frontend    | Flutter                     |
+| Backend     | Firebase                    |
+| API Client  | Dio                         |
+| AR & 3D     | (Unity + ARKit/ARCore via integration) |
+| Maps        | Google Maps API             |
 
 ---
 
-## Installation
+## 🚀 Getting Started
 
-### Prerequisites
+Follow these steps to run the project locally:
 
-- Flutter SDK installed
-- Android Studio or Xcode for emulators
-- Firebase CLI 
+```bash
+# Clone the repository
+git clone https://github.com/your-username/rahhal-app.git
 
-### Steps
+# Move to the project directory
+cd rahhal-app
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/rahhal.git
+# Get Flutter packages
+flutter pub get
+
+# Run the app
+flutter run
