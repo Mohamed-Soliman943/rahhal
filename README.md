@@ -44,7 +44,7 @@ Follow these steps to run the project locally:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/rahhal-app.git
+git clone https://github.com/your-username/rahhal.git
 
 # Move to the project directory
 cd rahhal-app
