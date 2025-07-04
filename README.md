@@ -33,7 +33,7 @@
 | Frontend    | Flutter                     |
 | Backend     | Firebase                    |
 | API Client  | Dio                         |
-| AR & 3D     | (Unity + ARKit/ARCore via integration) |
+| AR & 3D     | (Unreal + ARKit/ARCore via integration) |
 | Maps        | Google Maps API             |
 
 ---
